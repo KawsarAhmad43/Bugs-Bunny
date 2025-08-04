@@ -1,12 +1,12 @@
 # # Bugs-Bunny : Bug Fixer AI Agent
-<img width="512" height="720" alt="20250804_1149_Cyberpunk Bugs Bunny_remix_01k1ssywztfwpbn0s1qrrs5v6c" src="https://github.com/user-attachments/assets/a47b5d51-921d-461c-9404-71c55a9fe27d" />
+![Uploading image.png…]()
 
 
 A tool to automatically detect and generate solutions for planted bugs in a codebase using AI.
 
 # Updated Project Folder Structure
 ```bash
-SAMPLE_PROJECT-MASTER/
+Bugs-Bunny/
 ├── .pytest_cache/
 ├── .ruff_cache/
 ├── backend/
@@ -50,7 +50,7 @@ SAMPLE_PROJECT-MASTER/
 Follow these step-by-step instructions to set up and run the Bug Fixer Agent:
 
 ### 1. Create a Virtual Environment
-- Open a terminal in the project root directory (`C:\Users\ASUS\Downloads\sample_project-master`).
+- Open a terminal in the project root directory (`C:\Users\ASUS\Downloads\Bugs-Bunny`).
 - Run the following command to create a virtual environment:
   ```
   python -m venv venv
@@ -61,7 +61,7 @@ Follow these step-by-step instructions to set up and run the Bug Fixer Agent:
   ```
   .\venv\Scripts\activate
   ```
-  - You should see `(venv)` prefixed to your terminal prompt, e.g., `(venv) PS C:\Users\ASUS\Downloads\sample_project-master>`.
+  - You should see `(venv)` prefixed to your terminal prompt, e.g., `(venv) PS C:\Users\ASUS\Downloads\Bugs-Bunny>`.
 
 ### 3. Install Requirements
 - Ensure the `requirements.txt` file is located in the `bug_fixer_agent` folder within the root directory.
@@ -84,12 +84,12 @@ Follow these step-by-step instructions to set up and run the Bug Fixer Agent:
   ```
 - The project will start processing, and you should see logs similar to the following:
   ```
-  (venv) PS C:\Users\ASUS\Downloads\sample_project-master-updated\sample_project-master-updated> python -m bug_fixer_agent.run
+  (venv) PS C:\Users\ASUS\Downloads\Bugs-Bunny-updated\Bugs-Bunny-updated> python -m bug_fixer_agent.run
   2025-08-03 20:44:18 - BugFixerAgent - INFO - Configuring Google GenAI client...
   2025-08-03 20:44:18 - BugFixerAgent - INFO - Google GenAI client configured successfully.
   2025-08-03 20:44:18 - BugFixerAgent - INFO - Bug Fixer Agent process started.
   2025-08-03 20:44:18 - BugFixerAgent - INFO - Setting up environment...
-  2025-08-03 20:44:18 - BugFixerAgent - INFO - Installing agent dependencies from C:\Users\ASUS\Downloads\sample_project-master-updated\sample_project-master-updated\bug_fixer_agent\requirements.txt...
+  2025-08-03 20:44:18 - BugFixerAgent - INFO - Installing agent dependencies from C:\Users\ASUS\Downloads\Bugs-Bunny-updated\Bugs-Bunny-updated\bug_fixer_agent\requirements.txt...
   2025-08-03 20:44:22 - BugFixerAgent - INFO - Agent dependencies installed successfully.
   2025-08-03 20:44:22 - BugFixerAgent - INFO - Inspecting the codebase to create context file ('codebase_content.txt')...
   2025-08-03 20:44:22 - BugFixerAgent - INFO - Codebase inspection complete.
@@ -141,7 +141,7 @@ Follow these step-by-step instructions to set up and run the Bug Fixer Agent:
   Status: SOLUTION_GENERATED
   Successfully generated a code solution.
   Generating Solutions: 100%|██████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:50<00:00, 10.09s/it] 
-  2025-08-03 20:45:12 - BugFixerAgent - INFO - Bug solution generation process complete. Report saved to 'C:\Users\ASUS\Downloads\sample_project-master-updated\sample_project-master-updated\bug_fix_report.txt'.
+  2025-08-03 20:45:12 - BugFixerAgent - INFO - Bug solution generation process complete. Report saved to 'C:\Users\ASUS\Downloads\Bugs-Bunny-updated\Bugs-Bunny-updated\bug_fix_report.txt'.
   2025-08-03 20:45:12 - BugFixerAgent - INFO - Total time: 54.00 seconds
   2025-08-03 20:45:12 - BugFixerAgent - INFO - Success rate (solution generation): 100.0%
   2025-08-03 20:45:13 - BugFixerAgent - INFO - Cleaned up codebase_content.txt
@@ -155,3 +155,4 @@ Follow these step-by-step instructions to set up and run the Bug Fixer Agent:
 - Ensure the Google GenAI API key is valid and properly set before running the script.
 
 - If any step fails, check the terminal output or logs for specific error messages and troubleshoot accordingly.
+
