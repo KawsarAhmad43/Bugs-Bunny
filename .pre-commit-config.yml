@@ -1,0 +1,50 @@
+# This file defines the hooks that pre-commit will run on your code.
+# For more information, visit https://pre-commit.com
+
+repos:
+  # General purpose hooks (trailing whitespace, end of file, large files etc.)
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0 # Use the latest stable release
+    hooks:
+      - id: trailing-whitespace # Fixes trailing whitespace
+      - id: end-of-file-fixer # Ensures files end with a newline
+      - id: check-yaml # Checks YAML file syntax
+      - id: check-json # Checks JSON file syntax
+      - id: check-added-large-files # Prevents committing large files
+        args: [--maxkb=8192] # Adjust max file size (in KB)
+
+  # Python hooks
+  - repo: https://github.com/psf/black
+    rev: 24.4.2 # Use the latest stable release
+    hooks:
+      - id: black
+        # Use a specific Python version consistent with your project
+        # from .python-version or pyproject.toml
+        language_version: python3.13
+
+  - repo: https://github.com/PyCQA/flake8
+    rev: 7.1.0 # Use the latest stable release
+    hooks:
+      - id: flake8
+        # Define the files to run Flake8 on, typical for Django projects
+        # This will run on all Python files within the backend directory and any top-level Python files.
+        files: '\.py$'
+        args: [--max-line-length=80, --ignore=E203,W503] # Adjust as per your team's style guide
+        # E203: Whitespace before ':'
+        # W503: Line break before binary operator
+
+  - repo: https://github.com/PyCQA/isort
+    rev: 5.13.2 # Use the latest stable release
+    hooks:
+      - id: isort
+        name: isort (Python imports)
+        args: ["--profile", "black"] # Make isort compatible with black formatting
+
+  # Frontend hooks (for JavaScript/TypeScript, JSON, CSS files)
+  # Prettier is a versatile code formatter for many languages.
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: v4.0.0-alpha.8 # Use a stable release, or latest alpha if features are needed
+    hooks:
+      - id: prettier
+        # Target common frontend files (adjust regex if needed for more file types)
+        files: '\.(js|jsx|ts|tsx|css|scss|json|yaml|yml)$'

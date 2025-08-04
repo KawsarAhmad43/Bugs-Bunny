@@ -1,0 +1,22 @@
+[project]
+name = "sample-project-master"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "google-genai>=1.28.0",
+    "langchain-google-genai>=2.1.8",
+    "pathspec>=0.12.1",
+    "pip>=25.2",
+    "pre-commit>=4.2.0",
+    "pytest>=8.4.1",
+    "pytest-django>=4.11.1",
+    "python-dotenv>=1.1.1",
+    "tqdm>=4.67.1",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.1",
+]
