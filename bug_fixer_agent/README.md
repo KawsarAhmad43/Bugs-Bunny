@@ -1,4 +1,6 @@
-# Bug Fixer Agent
+# # Bugs-Bunny : Bug Fixer AI Agent
+<img width="512" height="720" alt="20250804_1149_Cyberpunk Bugs Bunny_remix_01k1ssywztfwpbn0s1qrrs5v6c" src="https://github.com/user-attachments/assets/a47b5d51-921d-461c-9404-71c55a9fe27d" />
+
 
 A tool to automatically detect and generate solutions for planted bugs in a codebase using AI.
 
@@ -151,4 +153,5 @@ Follow these step-by-step instructions to set up and run the Bug Fixer Agent:
 
 ### Notes
 - Ensure the Google GenAI API key is valid and properly set before running the script.
+
 - If any step fails, check the terminal output or logs for specific error messages and troubleshoot accordingly.
