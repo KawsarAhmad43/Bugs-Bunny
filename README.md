@@ -1,4 +1,4 @@
-# # Bugs-Bunny : Bug Fixer AI Agent
+# Bugs-Bunny : Bug Fixer AI Agent
 <img width="799" height="292" alt="image" src="https://github.com/user-attachments/assets/7fc1eadc-501d-4f1f-80b2-49f454888cf8" />
 
 <p>An AI Agent that has lots of tools to automatically detect and generate solutions for planted bugs in a codebase using AI.</p>
